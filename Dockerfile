@@ -1,3 +1,3 @@
 FROM openjdk:19
-COPY target/springboot-backend-0.0.1-SNAPSHOT.jar springboot-backend.jar
+COPY target/springboot-backend-2.5.5.jar springboot-backend.jar
 ENTRYPOINT ["java", "-jar", "/springboot-backend.jar"]
