@@ -29,6 +29,14 @@ public class UserController {
         return (List<User>) userRepository.findAll();
 
     }
+
+
+    @GetMapping
+    public void User() {
+
+        System.out.println("it's an user");
+
+    }
 //add
 @PostMapping
 public void addUser(@RequestBody User user)
