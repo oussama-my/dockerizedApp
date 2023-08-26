@@ -39,7 +39,7 @@ public class UserController {
     }
 //add
 @PostMapping
-public void XXXX(@RequestBody User user)
+public void addUser(@RequestBody User user)
     { userRepository.save(user);}
 
     //build get employee by id
