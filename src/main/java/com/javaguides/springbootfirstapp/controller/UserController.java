@@ -23,20 +23,20 @@ public class UserController {
 
         User deleteUser = userRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("user not exist"+id));
         userRepository.delete(deleteUser);}
-@GetMapping
-    public List<User> getAllusers() {
+/*//@GetMapping
+//    public List<User> getAllusers() {
+//
+//        return (List<User>) userRepository.findAll();
+//
+//    }*/
 
-        return (List<User>) userRepository.findAll();
 
-    }
-
-
-    @GetMapping
+/*    @GetMapping
     public void User() {
 
         System.out.println("it's an user");
 
-    }
+    }*/
 //add
 @PostMapping
 public void addUser(@RequestBody User user)

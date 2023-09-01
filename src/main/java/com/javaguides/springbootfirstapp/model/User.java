@@ -1,10 +1,7 @@
 package com.javaguides.springbootfirstapp.model;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 //import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
@@ -16,6 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name="user")
+@Builder
 public class User {
 
     @Id
