@@ -1,4 +1,3 @@
-/*
 package com.javaguides.springbootfirstapp;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 
@@ -20,17 +19,19 @@ public class UsetDaoTest
 
 
     @Test
-    public void User_Save(){
+    public void User_SaveTest(){
+
         User user= User.builder()
                 .id(1L)
                 .email("email@gmail.com")
                 .full_name("ikram amine")
                 .password("****")
                 .build();
+
         User userSaved= userRepository.save(user);
         Assertions.assertThat(userSaved).isNotNull();
         Assertions.assertThat(userSaved.getId()).isEqualTo(1L);
+        Assertions.assertThat(userSaved.getEmail()).isEqualTo("email@gmail.com");
 
     }
 }
-*/

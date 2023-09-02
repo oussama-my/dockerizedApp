@@ -1,4 +1,3 @@
-/*
 
 package com.javaguides.springbootfirstapp;
 
@@ -13,4 +12,3 @@ class SpringbootFirstAppApplicationTests {
 	}
 
 }
-*/
