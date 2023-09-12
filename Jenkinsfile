@@ -4,9 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                sh 'mvn test'
-                sh 'mvn install'
-                sh 'mvn package'
+                bat 'mvn test'
+                bat 'mvn install'
+                bat 'mvn package'
                 archiveArtifacts artifacts: 'target/DockerizedApp.zip'
             }
         }
