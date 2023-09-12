@@ -4,8 +4,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                sh './gradlew build --no-daemon'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
+                sh 'mvn test'
+                sh 'mvn install'
+                sh 'mvn package'
+                archiveArtifacts artifacts: 'target/DockerizedApp.zip'
             }
         }
     }
