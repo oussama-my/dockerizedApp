@@ -1,4 +1,4 @@
-pipeline {
+/* pipeline {
     agent any
      tools {
         // Specify the tool name you configured in Jenkins
@@ -16,3 +16,4 @@ pipeline {
         }
     }
 }
+*/
